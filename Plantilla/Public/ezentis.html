@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EZENTIS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="header">
+    <div class="head">
+        <h1 class="title">Plantillas Multicliente</h1>
+        <h2 class="sub-title">Ezentis</h2>
+    </div>
+    <div class="head-links">
+        <a class="link" href="">OneNote</a>
+        <a class="link" href="">Service</a>
+        <a class="link" href="">Log</a>
+    </div>
+</section>
+<section class="select">
+    <div class="select-template">
+        <label for="clientes">Clientes</label>
+        <select id="clientes" name="clientes" onchange="location = this.value">
+            <option value="index.html">Home</option>
+            <option value="Public/clece.html">Clece</option>
+            <option value="Public/clh.html">CLH</option>
+            <option value="Public/ezentis.html" selected>Ezentis</option>
+            <option value="Public/igt.html">IGT</option>
+            <option value="Public/northgate.html">Northgate</option>
+            <option value="Public/ub.html">UB</option>
+        </select>
+    </div>
+</section>
+<section class="form">
+    <form class="form-body">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="text" id="last-name" placeholder="Apellidos">
+        <input type="text" id="phone" placeholder="Telefono">
+        <input type="text" id="mail" placeholder="Correo">
+        <input type="text" id="id-ticket" placeholder="N Incidencia">
+        <input type="text" id="info" placeholder="Descripcion">
+    </form>
+    <button onclick="SubForm()">Submit</button>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
